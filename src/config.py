@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     
     @property
     def DATABASE_URL_default(self):
-        return "postgresql://" + self.DATABASE_URL
+        return "postgresql://" + "userone:qwertyuseronepostgrestochka@c-c9qpfjjk5123cemgdb8q.rw.mdb.yandexcloud.net:6432/market"
     
     model_config = SettingsConfigDict(env_file=".env")
 

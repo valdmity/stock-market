@@ -12,7 +12,7 @@ class User(Base):
     __tablename__ = "users"
 
     id: Mapped[UUID] = mapped_column(primary_key=True)
-    name: Mapped[str] = mapped_column(unique=True)
+    name: Mapped[str] = mapped_column()
     role: Mapped[Role]
     api_key_hash: Mapped[str] = mapped_column(unique=True)
     encrypted_api_key: Mapped[str] = mapped_column(unique=True)

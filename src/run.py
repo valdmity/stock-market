@@ -10,7 +10,7 @@ def cli() -> None:
 @cli.command()
 @click.option(
     '--port',
-    default=8000,
+    default=8080,
     help='Server port',
 )
 def web(port: int) -> None:
